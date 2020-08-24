@@ -1,9 +1,10 @@
-def only_evens():
-    num = [11, 20, 42, 97, 23, 10]
+num = [11, 20, 42, 97, 23, 10]
+
+def only_evens(num):
     even_num = []
     for nums in num:
         if nums % 2 == 0:
             even_num.append(nums)
-    print(even_num)
+    return even_num
 
-only_evens()
+print(only_evens(num))

@@ -2,9 +2,9 @@
 def is_even(num):
     #finding remainder if even print true
     if num % 2 == 0:
-        return 'True'
+        return True
     else:  # if odd print false
-        return 'False'
+        return False
 #handling value errors
 try:
     user_input = int(input('Enter a number! '))

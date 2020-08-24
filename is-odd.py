@@ -7,21 +7,19 @@ def is_even(num):
         return False
 
 
+def is_odd(num):
+    if not is_even(num):
+        print('odd')
+    else:
+        print('even')
+
+
 #handling value errors
 try:
     user_input = int(input('Enter a number! '))
 except ValueError:
     print('Must input a number')
 
-answer = is_even(user_input)
-print(answer)
-
-def is_odd():
-    if not is_even(user_input):
-        print('odd')
-    else:
-        print('even')
-
-is_odd()
+is_odd(user_input)
 
 
